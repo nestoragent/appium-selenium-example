@@ -24,11 +24,10 @@ public class HomePage extends Page {
     @FindBy(css = "li.main_nav_trading")
     public WebElement liTrading;
 
-    @FindBy(css = "li.menu-stocks")
+    @FindBy(css = "li.menu-stocks > a")
     public WebElement liStocks;
 
     public HomePage() {
-        System.out.println("Web home page");
         PageFactory.initElements(Init.getWebDriver(), this);
         new WebDriverWait(Init.getWebDriver(), Duration.ofSeconds(Props.getLong("implicit.wait.duration")))
                 .until(ExpectedConditions.visibilityOf(divLogo));

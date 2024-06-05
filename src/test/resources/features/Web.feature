@@ -8,14 +8,9 @@ Feature: Automation testing task #2 (UI)
     Then User (open_menu) "Stocks"
     Then User is on page "Stocks"
     Then User (choose stock filter) "Norway"
+    Then User (find_stock_in_table) "Orkla ASA (ORK.OL)"
+    Then User (remember_stock_in_table) "Orkla ASA (ORK.OL)"
+    Then User (click_read_more_for) "Orkla ASA (ORK.OL)"
+    Then User is on page "Stock Certain"
+    Then User (check_trading_conditions_for) "Orkla ASA (ORK.OL)"
 
-
-#  Use Case:
-#  1. Open Home page (make any check here if needed).
-#  2. Click the “Trading” link located at the top menu (make any check here if needed).
-#  3. Click on “Stocks” (make any check here if needed).
-#  4. Choose the &quot;Norway&quot; stock filter.
-#  5. Get data from the table for the &quot;Orkla ASA (ORK.OL)&quot;  (make any check here if
-#  needed).
-#  6. Click on the &quot;READ MORE&quot; at this brand.
-#  7. Compare the data from the previous table with data in &quot;Trading Conditions&quot;.

@@ -1,7 +1,6 @@
 package com.xm;
 
 import com.xm.lib.Init;
-import io.cucumber.java.After;
 import io.cucumber.java.AfterAll;
 
 public class AfterTest {
